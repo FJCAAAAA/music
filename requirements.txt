@@ -1,0 +1,4 @@
+Django==3.2.16
+pymysql
+requests==2.27.1
+django-simpleui==2023.3.1

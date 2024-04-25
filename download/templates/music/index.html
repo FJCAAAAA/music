@@ -1,0 +1,60 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{% static 'favicon.ico' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/styleauto.css' %}">
+    <link rel="stylesheet" href="{% static 'css/scrollbar.css' %}">
+    <title>Free Music</title>
+</head>
+
+<body>
+    <div class="search-pendant">
+        <input type="checkbox" class="search-pendant-point">
+        <div class="search-pendant-toppoint"></div>
+        <div class="search-pendant-content">
+        </div>
+        <div class="search-pendant-info">
+            <p>作者：<a href="https://github.com/fjcaaaaa" target="_blank">FJC</a></p>
+            <p>邮箱：1499041019@qq.com</p>
+            <a href="http://www.beian.miit.gov.cn" target="_blank">粤ICP备 17128259 号</a>
+        </div>
+    </div>
+    <div class="banner">
+        <div class="search-content">
+            <div class="span_1_of_1">
+                <h2>Thousands of Lossless Music<br></h2>
+            </div>
+            <div class="search-box">
+                <a href="javascript:;" class="search-btn" onclick="goSearch()">
+                    <div class="search-ico">
+                        <img src="{% static 'images/search.svg' %}">
+                    </div>
+                </a>
+                <div class="search-int">
+                    <input type="text" class="search-input" name="search_text" id="search_text"  placeholder="歌名"/>
+                </div>
+            </div>
+        </div>
+        <div class="search-bookmark">
+            <a href="{% url 'goodluck' %}" target="_black">
+                <img src="{% static 'images/music.ico' %}">
+                <p>试试手气</p>
+            </a>
+        </div>
+    </div>
+
+    <script src="{% static 'js/EventUtil.js' %}"></script>
+    <script src="{% static 'js/Search.js' %}"></script>
+    <div class="grid_3">
+        <p>Copyright©2023 AiLing. All Rights Reserved.</p>
+    </div>
+</body>
+
+</html>
