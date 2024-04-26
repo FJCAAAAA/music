@@ -1,7 +1,7 @@
 """
 File name : user_agent.py
 Create file time: 2023/8/28 21:25
-File Create By Author : 冯继承
+File Create By Author : fengjicheng
 """
 pcUserAgent = [
         # Opera
